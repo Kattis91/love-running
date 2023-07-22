@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: lato, sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
@@ -31,7 +31,7 @@ h2 {
 }
 
 #menu,
-logo {
+#logo {
     line-height: 75px;
 }
 
@@ -41,13 +41,13 @@ logo {
     margin-right: 30px;
 }
 
-#menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
-}
-
 #menu a {
     text-decoration: none;
     color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active {
@@ -58,6 +58,13 @@ logo {
     height: 600px;
     width: 100%;
     overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
 
 #hero-image {
@@ -68,9 +75,7 @@ logo {
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
 }
-
 
 @keyframes hero-zoom {
     from {
@@ -80,3 +85,24 @@ logo {
     to {
         transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
